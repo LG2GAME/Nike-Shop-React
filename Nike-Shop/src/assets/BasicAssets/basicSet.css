@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+:root {
+  --black: #000;
+  --eerie-black: #252525;
+  --soft-gray: #707072;
+  --gray-platinum: #d9d9d9;
+  --lavender: #f2ecff;
+  --platinum: #fcfafc;
+  --pumpkin: #ff6700;
+  --red: #ff0000;
+  --soft-gray: #d9d9d9;
+  --white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Itim", cursive !important;
+  scroll-behavior: smooth;
+}
+
+.min-height {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.bg-color-black {
+  background-color: var(--black);
+}
+.bg-color-white {
+  background-color: var(--white);
+}

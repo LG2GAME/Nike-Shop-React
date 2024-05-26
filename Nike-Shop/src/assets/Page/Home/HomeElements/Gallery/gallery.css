@@ -1,0 +1,149 @@
+.gallery {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.gallery-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gh-c {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 50%;
+  align-items: center;
+}
+.gh-c button {
+  border: none;
+  background-color: var(--white);
+  border-radius: 50%;
+  color: var(--black);
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* dodatek, mozna usunac */
+  transition: background-color 0.3s ease, filter 0.3s ease, scale 0.3s ease;
+}
+.gh-c button:hover {
+  background-color: var(--lavender);
+}
+.gh-c button.off {
+  filter: opacity(0.9) blur(1px);
+  scale: 0.95;
+  cursor: auto;
+}
+.gh-c button.off:hover {
+  background-color: var(--white);
+}
+
+.gh-c-btns {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-container {
+  max-width: calc(400px * 10);
+  width: 95%;
+}
+
+.gallery-carousel .gallery-items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(10, 1fr);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.gallery-carousel .gallery-items::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-carousel .gallery-items img {
+  width: auto;
+  object-fit: cover;
+  height: 400px;
+  background-color: var(--lavender);
+}
+
+.gallery-item-com {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery-item-com .gallery-item-price-cut {
+  text-decoration: line-through;
+}
+.gallery-item-com div {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 998px) {
+  .gh-c {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .gh-c-btns {
+    width: 35%;
+  }
+
+  .gallery-carousel .gallery-items img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 696px) {
+  .gh-c {
+    width: 40%;
+  }
+
+  .gh-c button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gh-c-btns {
+    width: 50%;
+  }
+
+  .gallery-carousel .gallery-items img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .gallery-header {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .gallery-header h1 {
+    margin-bottom: 2rem;
+  }
+
+  .gh-c {
+    width: 100%;
+  }
+  .gh-c button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gh-c-btns {
+    width: 50%;
+  }
+}

@@ -1,0 +1,26 @@
+.shop-items {
+  justify-content: start;
+}
+
+.si-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.si-nav ul {
+  margin: 0;
+  padding: 2px;
+}
+.si-nav ul li {
+  margin: 0;
+  padding: 12px;
+}
+.si-nav ul li a {
+  cursor: pointer;
+  color: var(--black) !important;
+  text-transform: capitalize;
+}

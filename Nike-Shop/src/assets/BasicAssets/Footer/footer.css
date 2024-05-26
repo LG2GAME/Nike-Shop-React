@@ -1,0 +1,135 @@
+.footer-qna,
+.footer-ftr {
+  min-height: 50vh;
+  width: 100%;
+}
+
+.footer-qna-acc {
+  max-width: 70%;
+}
+
+.accordion {
+  margin: 0.25rem;
+}
+
+.accordion-item {
+  border: 0;
+  border-bottom: 1px solid var(--soft-gray);
+  border-radius: 0 !important;
+}
+
+.accordion-button {
+  border-radius: 0 !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--soft-gray);
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 998px) {
+  .footer-qna-acc {
+    max-width: 100%;
+  }
+}
+
+.footer-ftr {
+  align-items: center;
+  display: flex;
+}
+
+.ftr-ctn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+.ftr-ctn.container {
+  max-width: 100% !important;
+}
+
+.ftr-links {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ftr-links div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: auto;
+  text-align: left;
+}
+
+.ftr-links div ul li:nth-child(1),
+.ftr-links div:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.ftr-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  width: 15%;
+  margin-right: 2rem;
+}
+
+.ftr-icons a {
+  text-decoration: none;
+  background-color: var(--white);
+  border-radius: 5px;
+  color: var(--black);
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.ftr-icons a svg {
+  width: 40px;
+  padding: 5px;
+  height: auto;
+}
+
+@media (max-width: 998px) {
+  .ftr-icons {
+    align-items: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-qna,
+  .footer-ftr {
+    padding: 3rem 0;
+  }
+
+  .ftr-ctn {
+    flex-direction: column;
+  }
+
+  .ftr-links {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--white);
+    justify-content: start;
+  }
+
+  .ftr-icons {
+    flex-direction: row;
+    width: 40%;
+    height: auto;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 696px) {
+  .ftr-icons {
+    width: 90%;
+  }
+}
