@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
-import { shopItems } from "../shopItemsData";
-import "bootstrap/dist/css/bootstrap.css";
+/* eslint-disable react/jsx-key */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
 import "../../../../BasicAssets/basicSet.css";
 import "./shopFilter.css";
-import shopItemsBuild from "./ShopItems/shopItems.jsx";
+import "bootstrap/dist/css/bootstrap.css";
+import { shopItems } from "../shopItemsData";
+import { useEffect, useState } from "react";
+import itemsGenerator from "./ShopItems/itemsGenrator";
 
 function shopFilter() {
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -53,7 +56,7 @@ function shopFilter() {
         </ul>
       </div>
       <div className="items-container min-height">
-        {shopItemsBuild(filteredItems)}
+        {itemsGenerator(filteredItems)}
       </div>
     </div>
   );

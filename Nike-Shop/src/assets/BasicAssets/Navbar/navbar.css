@@ -43,9 +43,9 @@ ul li a {
 
 @media (max-width: 998px) {
   .navbar {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    height: 10vh;
   }
   .navbar.show {
     height: 100vh;
