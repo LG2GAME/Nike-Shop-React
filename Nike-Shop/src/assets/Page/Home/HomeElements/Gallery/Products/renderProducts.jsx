@@ -11,8 +11,7 @@ function ItemBuild(props) {
         <div className="gallery-item-com">
           <p className="gallery-item-name h4">{props.name}</p>
           <div>
-            <p className="gallery-item-price h4">${props.price}</p>
-            <p className="gallery-item-price-cut">{props.saleAmount}</p>
+            <p className="gallery-item-price h4">{props.price} zł</p>
           </div>
         </div>
       </div>

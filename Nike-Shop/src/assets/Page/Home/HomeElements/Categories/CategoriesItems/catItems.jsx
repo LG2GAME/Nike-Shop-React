@@ -13,7 +13,7 @@ function ItemBuild(props) {
         </div>
         <div className="offer-content-btns">
           <p>{props.cat}</p>
-          <a href="#">Przeglądaj stylizacje</a>
+          <a href="/shop">Przeglądaj stylizacje</a>
         </div>
       </section>
     </>

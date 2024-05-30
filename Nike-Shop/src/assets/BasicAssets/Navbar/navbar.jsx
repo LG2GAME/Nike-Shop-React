@@ -29,27 +29,32 @@ function Navbar() {
         </div>
         <ul className="hidden" id="navUl">
           <li>
-            <a href="#" id="home-page" className="h5" defaultChecked={false}>
+            <a
+              href="/home"
+              id="home-page"
+              className="h5"
+              defaultChecked={false}
+            >
               strona główna
             </a>
           </li>
           <li>
-            <a href="#" id="shop-page" className="h5">
+            <a href="/shop" id="shop-page" className="h5">
               sklep
             </a>
           </li>
           <li>
-            <a href="#" id="sale-page" className="h5">
+            <a href="/sale" id="sale-page" className="h5">
               wyprzedaż
             </a>
           </li>
           <li>
-            <a href="#" id="state-shop-page" className="h5">
+            <a href="/state-shop" id="state-shop-page" className="h5">
               sklepy stacjonarne
             </a>
           </li>
           <li>
-            <a href="#" id="contact-page" className="h5">
+            <a href="/contact" id="contact-page" className="h5">
               kontakt
             </a>
           </li>

@@ -45,7 +45,9 @@ function Gallery() {
         <section className="gallery-header">
           <h1>odkryj inne oferty</h1>
           <div className="gh-c">
-            <p className="h3">Zobacz więcej</p>
+            <a href="/sale" className="h3">
+              Zobacz więcej
+            </a>
             <div className="gh-c-btns">
               <button
                 className="h3 slide-button gallery-button off"

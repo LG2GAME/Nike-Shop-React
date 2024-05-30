@@ -23,6 +23,18 @@
   width: 50%;
   align-items: center;
 }
+
+.gh-c a {
+  text-decoration: none;
+  align-items: center;
+  background-color: var(--white) !important;
+  border-radius: 999px;
+  color: var(--black) !important;
+  height: 10%;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+}
+
 .gh-c button {
   border: none;
   background-color: var(--white);
