@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
 import "../../../../BasicAssets/basicSet.css";
@@ -8,13 +7,12 @@ import { shopItems } from "../shopItemsData";
 import { useEffect, useState } from "react";
 import itemsGenerator from "./ShopItems/itemsGenrator";
 
-// Wyeksportowana funkcja handleFilterButtonClick
 export const handleFilterButtonClick = (
   selectedCategory,
   setSelectedFilters
 ) => {
   setSelectedFilters([selectedCategory]);
-  sessionStorage.setItem("selectedCategory", selectedCategory);
+  localStorage.setItem("selectedCategory", selectedCategory);
 };
 
 function shopFilter() {
@@ -25,10 +23,9 @@ function shopFilter() {
   let names = ["Mężczyźni", "Kobiety", "Dzieci"];
 
   useEffect(() => {
-    const savedCategory = sessionStorage.getItem("selectedCategory");
+    const savedCategory = localStorage.getItem("selectedCategory");
     if (savedCategory) {
-      handleFilterButtonClick(savedCategory, setSelectedFilters);
-      sessionStorage.removeItem("selectedCategory"); // Resetujemy filtr po załadowaniu strony
+      setSelectedFilters([savedCategory]);
     }
   }, []);
 
