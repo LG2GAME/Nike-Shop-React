@@ -6,14 +6,17 @@ const catItemData = [
   {
     img: womanIMG,
     cat: "Kobiety",
+    id: "women",
   },
   {
     img: manIMG,
     cat: "Mężczyźni",
+    id: "men",
   },
   {
     img: childIMG,
     cat: "Dzieci",
+    id: "kids",
   },
 ];
 

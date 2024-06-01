@@ -8,6 +8,15 @@ import { shopItems } from "../shopItemsData";
 import { useEffect, useState } from "react";
 import itemsGenerator from "./ShopItems/itemsGenrator";
 
+// Wyeksportowana funkcja handleFilterButtonClick
+export const handleFilterButtonClick = (
+  selectedCategory,
+  setSelectedFilters
+) => {
+  setSelectedFilters([selectedCategory]);
+  sessionStorage.setItem("selectedCategory", selectedCategory);
+};
+
 function shopFilter() {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [filteredItems, setFilteredItems] = useState(shopItems);
@@ -15,9 +24,13 @@ function shopFilter() {
   let filters = ["men", "women", "kids"];
   let names = ["Mężczyźni", "Kobiety", "Dzieci"];
 
-  const handleFilterButtonClick = (selectedCategory) => {
-    setSelectedFilters([selectedCategory]);
-  };
+  useEffect(() => {
+    const savedCategory = sessionStorage.getItem("selectedCategory");
+    if (savedCategory) {
+      handleFilterButtonClick(savedCategory, setSelectedFilters);
+      sessionStorage.removeItem("selectedCategory"); // Resetujemy filtr po załadowaniu strony
+    }
+  }, []);
 
   useEffect(() => {
     filterItems();
@@ -44,10 +57,10 @@ function shopFilter() {
         <ul>
           {filters.map((category, idx) => (
             <li
-              onClick={() => handleFilterButtonClick(category)}
-              className={`button ${
-                selectedFilters?.includes(category) ? "active" : ""
-              }`}
+              onClick={() =>
+                handleFilterButtonClick(category, setSelectedFilters)
+              }
+              className="button"
               key={`filters-${idx}`}
             >
               <a>{names[idx]}</a>
