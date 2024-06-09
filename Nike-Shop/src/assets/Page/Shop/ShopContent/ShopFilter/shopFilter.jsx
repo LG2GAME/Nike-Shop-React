@@ -1,11 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/rules-of-hooks */
-import "../../../../BasicAssets/basicSet.css";
-import "./shopFilter.css";
-import "bootstrap/dist/css/bootstrap.css";
+
 import { shopItems } from "../shopItemsData";
 import { useEffect, useState } from "react";
-import itemsGenerator from "./ShopItems/itemsGenrator";
+import itemsGenerator from "./ShopItems/itemsGenerator";
 
 export const handleFilterButtonClick = (
   selectedCategory,

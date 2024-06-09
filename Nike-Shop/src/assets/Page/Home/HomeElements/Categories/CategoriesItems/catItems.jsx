@@ -1,7 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-key */
-import "bootstrap/dist/css/bootstrap.css";
 import catItemData from "./catItemsData";
 import { useState } from "react";
 import { handleFilterButtonClick } from "../../../../Shop/ShopContent/ShopFilter/shopFilter";

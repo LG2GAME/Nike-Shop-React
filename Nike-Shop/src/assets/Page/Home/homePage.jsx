@@ -1,6 +1,3 @@
-import "../../BasicAssets/basicSet.css";
-import "./homePage.css";
-import "bootstrap/dist/css/bootstrap.css";
 import Categories from "./HomeElements/Categories/categories.jsx";
 import Gallery from "./HomeElements/Gallery/gallery.jsx";
 import logo from "/img/logo.png";

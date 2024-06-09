@@ -1,7 +1,5 @@
 import CatItem from "./CategoriesItems/catItems";
-import "bootstrap/dist/css/bootstrap.css";
-import "./categories.css";
-import "../../../../BasicAssets/basicSet.css";
+
 function Categories() {
   return (
     <>

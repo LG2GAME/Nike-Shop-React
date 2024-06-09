@@ -1,6 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "./gallery.css";
-import "../../../../BasicAssets/basicSet.css";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import RenderGallery from "./Products/renderProducts.jsx";

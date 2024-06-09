@@ -1,6 +1,3 @@
-import "../basicSet.css";
-import "./footer.css";
-import "bootstrap/dist/css/bootstrap.css";
 import Accordion from "react-bootstrap/Accordion";
 import FqAcc from "./FooterSet/STFooterItem/footerQNA";
 import { RiTwitterXLine } from "react-icons/ri";

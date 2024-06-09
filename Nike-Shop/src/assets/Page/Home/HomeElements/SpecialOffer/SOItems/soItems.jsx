@@ -3,8 +3,6 @@
 /* eslint-disable react/no-unknown-property */
 
 // import "../SpecialOffer.css";
-import "../../../../../BasicAssets/basicSet.css";
-import "bootstrap/dist/css/bootstrap.css";
 import soItemData from "./soItemsData.jsx";
 
 function imgSwitcher() {

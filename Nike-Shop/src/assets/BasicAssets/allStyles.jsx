@@ -1,0 +1,12 @@
+import "../Page/Home/HomeElements/Categories/categories.css";
+import "../Page/Home/HomeElements/Gallery/gallery.css";
+import "../Page/Home/HomeElements/SpecialOffer/specialOffer.css";
+import "../Page/Home/homePage.css";
+import "../Page/Sale/salePage.css";
+import "../Page/Shop/ShopContent/ShopFilter/shopFilter.css";
+import "../Page/Shop/ShopContent/ShopFilter/ShopItems/itemsGenerator.css";
+import "../Page/Shop/shopPage.css";
+import "./basicSet.css";
+import "./Footer/footer.css";
+import "./Navbar/navbar.css";
+import "bootstrap/dist/css/bootstrap.css";

@@ -21,8 +21,12 @@
 .accordion-button {
   border-radius: 0 !important;
 }
+.accordion-button.collapsed {
+  box-shadow: none !important;
+}
 .accordion-button:not(.collapsed) {
-  background-color: var(--soft-gray);
+  box-shadow: none !important;
+  background-color: var(--gray-platinum) !important;
 }
 .accordion-button:focus {
   box-shadow: none;

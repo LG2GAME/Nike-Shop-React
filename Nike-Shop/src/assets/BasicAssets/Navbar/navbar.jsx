@@ -1,6 +1,3 @@
-import "../basicSet.css";
-import "./navbar.css";
-import "bootstrap/dist/css/bootstrap.css";
 import logo from "/img/logo.png";
 
 function Navbar() {

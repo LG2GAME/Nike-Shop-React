@@ -2,8 +2,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 
-import "../../../basicSet.css";
-import "bootstrap/dist/css/bootstrap.css";
 import accData from "./footerQNAData";
 import Accordion from "react-bootstrap/Accordion";
 

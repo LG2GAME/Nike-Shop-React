@@ -1,8 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/jsx-key */
-import "../../../../../BasicAssets/basicSet.css";
-import "./itemsGenerator.css";
-import "bootstrap/dist/css/bootstrap.css";
 
 const ItemBuild = (props) => {
   if (props.cat === props.id) {

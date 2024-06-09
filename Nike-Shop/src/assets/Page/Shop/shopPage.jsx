@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
 import ShopFilter from "./ShopContent/ShopFilter/shopFilter.jsx";
 
 function shopPage() {
