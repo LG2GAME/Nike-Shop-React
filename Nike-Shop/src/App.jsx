@@ -2,8 +2,8 @@ import "./assets/BasicAssets/allStyles.jsx";
 import Footer from "./assets/BasicAssets/Footer/footer.jsx";
 import Navbar from "./assets/BasicAssets/Navbar/navbar.jsx";
 import HomePage from "./assets/Page/Home/homePage.jsx";
-import ShopPage from "./assets/Page/Shop/shopPage.jsx";
 import SalePage from "./assets/Page/Sale/salePage.jsx";
+import ShopPage from "./assets/Page/Shop/shopPage.jsx";
 
 function App() {
   let component;

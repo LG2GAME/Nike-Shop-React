@@ -1,0 +1,211 @@
+:root {
+  --aegean-storm: #7a96c8;
+  --anthracite: #383838;
+  --atmosphere: #b1b1b1;
+  --black: #000000;
+  --black-heather: #4c4c4c;
+  --blackened-blue: #414a4c;
+  --bleached-coral: #f2c7b5;
+  --blue: #0000ff;
+  --blue-orbit: #1f6bc6;
+  --bright-ceramic: #00aaff;
+  --brushed-silver: #d8d8d8;
+  --canyon-purple: #512d6d;
+  --charcoal-heather: #434343;
+  --chlorine-blue: #4a90e2;
+  --citron-tint: #e3cd62;
+  --college-navy: #0b3065;
+  --court-blue: #4760a8;
+  --dark-driftwood: #a89f93;
+  --dark-grey: #545454;
+  --dark-smoke-grey: #4f4f4f;
+  --dark-steel-grey: #536878;
+  --desert-orange: #f66f44;
+  --electric-green: #00ff00;
+  --electro-orange: #ff5000;
+  --electro-purple: #a429b4;
+  --fauna-brown: #c7b198;
+  --field-purple: #6c4675;
+  --flat-pewter: #9b9b9b;
+  --flat-silver: #dadada;
+  --flax: #e8c283;
+  --fossil-rose: #dbbdbd;
+  --fossil-stone: #ccb79a;
+  --gold: #ffd700;
+  --gold-dart: #f0a800;
+  --gorge-green: #597b2f;
+  --green: #008000;
+  --grey-fog: #c0c0c0;
+  --grey-heather: #808080;
+  --heather: #b3b3b3;
+  --hyper-jade: #00b6b8;
+  --hyper-pink: #ff007f;
+  --iron-grey: #787878;
+  --laser-blue: #56a0d3;
+  --lavender-mist: #e6e6fa;
+  --light-bone: #eae2d5;
+  --light-iron-ore: #d7d7d7;
+  --light-smoke-grey: #d3d3d3;
+  --medium-olive: #59632d;
+  --metallic-gold: #d4af37;
+  --metallic-silver: #a0a0a0;
+  --midnight-navy: #191970;
+  --multi-color: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+  --muslin: #d9c1a1;
+  --navy: #000080;
+  --obsidian: #1a202c;
+  --orange: #ffa500;
+  --particle-grey: #e1e1e1;
+  --pearl-white: #f0f0f0;
+  --pepper-red: #8b1a1a;
+  --photo-blue: #4f86f7;
+  --pink-prime: #ff4d8a;
+  --pinksicle: #ff66cc;
+  --powder-blue: #b0e0e6;
+  --pro-green: #2f6d4a;
+  --psychic-blue: #5068a9;
+  --psychic-purple: #855c9c;
+  --purple: #800080;
+  --red: #ff0000;
+  --redstone: #a46446;
+  --royal: #4169e1;
+  --rush-blue: #1e90ff;
+  --rush-pink: #f37596;
+  --safety-orange: #ff6700;
+  --sail: #f0f5f9;
+  --scarlet: #ff2400;
+  --scream-green: #76ff7a;
+  --seafoam: #7fffd4;
+  --sesame: #c1b28b;
+  --signal-blue: #0000cd;
+  --silver: #c0c0c0;
+  --siren-red: #ff4e00;
+  --smoke-grey: #6f7072;
+  --summit-white: #f4f4f4;
+  --sundial: #e2a76f;
+  --team-crimson: #a41e35;
+  --team-gold: #ffcc00;
+  --team-orange: #f78200;
+  --thunder-blue: #003366;
+  --tough-red: #ce4257;
+  --tour-yellow: #fff200;
+  --university-red: #b00020;
+  --valor-blue: #1a1aff;
+  --vivid-green: #9dff00;
+  --white: #ffffff;
+}
+
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.s-item-container {
+  width: 30%;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.s-item-container img {
+  height: 50%;
+  width: 100%;
+  background-color: var(--dark-white);
+  object-fit: contain;
+}
+
+.sc-txt {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.sc-txt-info,
+.sc-txt-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.color {
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+}
+
+.sc-txt-price button {
+  border: none;
+  padding: 10px 45px;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+  background-color: var(--black);
+  color: var(--white);
+}
+.sc-txt-price .sc-btn-off {
+  filter: opacity(0.25);
+  cursor: default;
+}
+.sc-txt-price button:hover {
+  transform: scale(1.05);
+}
+.sc-txt-price .sc-btn-off:hover {
+  transform: scale(1);
+}
+
+@media (max-width: 1025px) {
+  .s-item-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 998px) {
+  .s-item-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-container {
+    gap: 0px;
+    margin: 40px 0;
+  }
+
+  .s-item-container {
+    width: 75%;
+    height: 95vh;
+    margin: 4rem 0;
+  }
+
+  .s-item-container img {
+    height: 70%;
+  }
+
+  .sc-txt-price button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .sc-txt-price {
+    flex-direction: column;
+  }
+
+  .sc-txt-price button {
+    width: 100%;
+    padding: 10px 90px;
+  }
+}

@@ -13,7 +13,10 @@ const ItemBuild = (props) => {
               <p className="h5">{props.idName}</p>
             </div>
             <div className="ic-txt-price">
-              <p className="h4">{props.price} zł</p>
+              <div className="price-container">
+                <p className="h6 old-price">{props.price} zł</p>
+                <p className="h4 new-price">{props.newPrice} zł</p>
+              </div>
               <button className="h4">Dodaj do koszyka</button>
             </div>
           </div>
@@ -35,43 +38,56 @@ function classItem(items, cat) {
           img={item.img}
           name={item.name}
           price={item.price}
+          newPrice={item.newPrice}
         />
       ))}
     </>
   );
 }
 
-function itemsGenerator(filteredItems) {
+function itemsGenerator(filteredItems, category) {
   return (
     <>
       <section>
         <div className="min-height container">
-          <nav>
+          <nav className="nav-sale">
             <h1>Buty</h1>
+            <a className="h4" href={"/shop/" + category + "-shoe"}>
+              Przejdź do sklepu
+            </a>
           </nav>
           <div className="items-container">
             {classItem(filteredItems, "shoe")}
           </div>
         </div>
         <div className="min-height container">
-          <nav>
+          <nav className="nav-sale">
             <h1>Ubrania</h1>
+            <a className="h4" href={"/shop/" + category + "-clothes"}>
+              Przejdź do sklepu
+            </a>
           </nav>
           <div className="items-container">
             {classItem(filteredItems, "clothes")}
           </div>
         </div>
         <div className="min-height container">
-          <nav>
+          <nav className="nav-sale">
             <h1>Nowości</h1>
+            <a className="h4" href={"/shop/" + category + "-news"}>
+              Przejdź do sklepu
+            </a>
           </nav>
           <div className="items-container">
             {classItem(filteredItems, "news")}
           </div>
         </div>
         <div className="min-height container">
-          <nav>
+          <nav className="nav-sale">
             <h1>Bestsellery</h1>
+            <a className="h4" href={"/shop/" + category + "-best"}>
+              Przejdź do sklepu
+            </a>
           </nav>
           <div className="items-container">
             {classItem(filteredItems, "best")}

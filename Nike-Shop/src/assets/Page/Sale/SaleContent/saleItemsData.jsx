@@ -1,4 +1,4 @@
-export const shopItems = [
+export const saleItems = [
   {
     category: "men",
     id: "shoe",
@@ -6,6 +6,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8caf5d7b-f44e-48e2-82f6-ad62978a6e14/buty-meskie-dunk-low-retro-wwlDHh.png",
     name: "Nike Dunk Low Retro",
     price: "579,99",
+    newPrice: "489,68",
   },
   {
     category: "men",
@@ -14,6 +15,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f50070d2-77a3-4213-aebf-9371d9759548/buty-meskie-air-max-dn-SBVfbL.png",
     name: "Nike Air Max Dn",
     price: "799,99",
+    newPrice: "599,00",
   },
   {
     category: "men",
@@ -22,6 +24,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e167643b-ee50-49f6-9705-5f0eee2178bb/buty-meskie-jordan-max-aura-3-xstMgH.png",
     name: "Jordan Max Aura 5",
     price: "629,99",
+    newPrice: "529,99",
   },
   {
     category: "men",
@@ -30,6 +33,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7d5124c9-d495-4de0-9a80-a92da6ffef11/joggery-meskie-sportswear-tech-fleece-3Gs9zz.png",
     name: "Nike Sportswear Tech Fleece",
     price: "479,99",
+    newPrice: "399,99",
   },
   {
     category: "men",
@@ -38,6 +42,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/23dbb579-3bdc-4f08-8e97-02c158794f9f/meski-t-shirt-z-krotkim-rekawem-jordan-jumpman-hsjRQf.png",
     name: "Jordan Jumpman",
     price: "139,99",
+    newPrice: "100,00",
   },
   {
     category: "men",
@@ -46,6 +51,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/abca3980-2509-46be-98b5-28eb6162fe2a/meska-bluza-z-kapturem-i-zamkiem-calej-dlugosci-sportswear-tech-fleece-windrunner-sL8pJT.png",
     name: "Nike Sportswear Tech Fleece Windrunner",
     price: "549,99",
+    newPrice: "339,39",
   },
   {
     category: "men",
@@ -54,6 +60,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/73300ab8-e29d-48d7-971c-012c85483422/buty-air-max-dn-SBVfbL.png",
     name: "Nike Air Max Dn",
     price: "799,99",
+    newPrice: "499,89",
   },
   {
     category: "men",
@@ -62,6 +69,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7138766e-a8b8-40d0-bd1c-c2f4424f3430/klapki-meskie-calm-se-qnXzhf.png",
     name: "Nike Calm SE",
     price: "229,99",
+    newPrice: "189,99",
   },
   {
     category: "men",
@@ -70,6 +78,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8c8d9b4a-a0fa-4383-8c47-440893ba21d1/t-shirt-meski-dri-fit-acg-v1Xvq1.png",
     name: "Nike ACG",
     price: "269,99",
+    newPrice: "249,99",
   },
   {
     category: "men",
@@ -78,6 +87,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bc016bc-cd7a-49cc-a399-47930b00c59f/buty-meskie-dunk-low-retro-wwlDHh.png",
     name: "Nike Dunk Low Retro",
     price: "549,99",
+    newPrice: "449,98",
   },
   {
     category: "men",
@@ -86,6 +96,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/348dd72d-c738-42a5-ad73-f83230160868/spodenki-meskie-jordan-brooklyn-fleece-kJBpDt.png",
     name: "Jordan Brooklyn Fleece",
     price: "229,99",
+    newPrice: "198,79",
   },
   {
     category: "men",
@@ -94,6 +105,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/298c9f7c-a668-4277-aa19-462b508da484/meska-bluza-z-kapturem-i-zamkiem-calej-dlugosci-sportswear-tech-fleece-windrunner-9zh7sm.png",
     name: "Nike Sportswear Tech Fleece Windrunner",
     price: "549,99",
+    newPrice: "449,99",
   },
   {
     category: "women",
@@ -102,6 +114,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e73307d7-9c02-4515-a0a9-e9a38e23a061/buty-cortez-textile-ntjT79.png",
     name: "Nike Cortez Textile",
     price: "429,99",
+    newPrice: "399,00",
   },
   {
     category: "women",
@@ -110,6 +123,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/745aee22-e411-4aa8-970d-4037b9a42fb3/buty-air-max-dn-WWJ2Wd.png",
     name: "Nike Air Max Dn",
     price: "799,99",
+    newPrice: "599,99",
   },
   {
     category: "women",
@@ -118,6 +132,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7437e33d-fcc8-46a6-82d4-16ed34370b6f/buty-air-max-97-frVmb5.png",
     name: "Nike Air Max 97",
     price: "899,99",
+    newPrice: "789,89",
   },
   {
     category: "women",
@@ -126,6 +141,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b0c01caa-28bf-4a5a-a72b-cf6cf622d27a/spodnie-ze-srednim-stanem-i-luznymi-nogawkami-sportswear-everything-wovens-vHd8Cp.png",
     name: "Nike Sportswear Wovens",
     price: "399,99",
+    newPrice: "349,50",
   },
   {
     category: "women",
@@ -134,6 +150,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5bc03d34-bd69-4c2f-aaf7-312ccaff106d/spodenki-pro-8-cm-GGg7xH.png",
     name: "Nike Pro",
     price: "139,99",
+    newPrice: "99,99",
   },
   {
     category: "women",
@@ -142,6 +159,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2edf2634-a913-47ec-ace7-27ed276fb633/bluza-z-kapturem-i-zamkiem-calej-dlugosci-sportswear-tech-fleece-windrunner-DwCs1H.png",
     name: "Nike Tech Fleece Windrunner",
     price: "549,99",
+    newPrice: "499,99",
   },
   {
     category: "women",
@@ -150,6 +168,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/70514318-6409-480e-b602-ec08a2afb6e2/portfel-karty-icon-air-force-1-66GSw8.png",
     name: "Nike Icon Air Force 1",
     price: "119,99",
+    newPrice: "89,99",
   },
   {
     category: "women",
@@ -158,6 +177,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d904b4f9-5916-4f8e-a547-70001a2e194e/buty-zoom-vomero-5-gold-rlmlZH.png",
     name: "Nike Zoom Vomero 5 Gold",
     price: "749,99",
+    newPrice: "649,99",
   },
   {
     category: "women",
@@ -166,6 +186,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a67361b3-0100-42b5-9f39-6b2f603018c6/ponczo-metamorph-ispa-b0MXr3.png",
     name: "Nike ISPA",
     price: "2799,99",
+    newPrice: "2299,29",
   },
   {
     category: "women",
@@ -174,6 +195,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a79aa525-9c69-4aa0-b3d0-abdb42e9f3ef/legginsy-o-pelnej-dlugosci-z-wysokim-stanem-i-kieszeniami-zapewniajace-mocne-wsparcie-go-pjFt88.png",
     name: "Nike Go",
     price: "499,99",
+    newPrice: "399,99",
   },
   {
     category: "women",
@@ -182,6 +204,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c80491d6-749d-4546-bb61-7a0bec0596c9/spodnie-dresowe-z-wysokim-stanem-i-szerokimi-nogawkami-sportswear-phoenix-fleece-pQNBkR.png",
     name: "Nike Phoenix Fleece",
     price: "279,99",
+    newPrice: "199,99",
   },
   {
     category: "women",
@@ -190,6 +213,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d3123e79-53e5-4a03-aa5b-fbc5c18b9bfd/buty-air-jordan-1-low-QnthX1.png",
     name: "Air Jordan 1 Low",
     price: "599,99",
+    newPrice: "499,99",
   },
   {
     category: "kids",
@@ -198,6 +222,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/600f543c-78a1-44d8-a404-8f0128b8fe19/buty-dla-duzych-court-borough-low-recraft-D9GcgF.png",
     name: "Nike Court Borugh Low Recraft",
     price: "299,99",
+    newPrice: "249,99",
   },
   {
     category: "kids",
@@ -206,6 +231,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e5659edd-c0e1-4957-8033-77df458af0d7/buty-dla-duzych-air-max-plus-cVqLFh.png",
     name: "Nike Air Max Plus",
     price: "669,99",
+    newPrice: "499,99",
   },
   {
     category: "kids",
@@ -214,6 +240,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/arvmiary1e4krftitqwf/buty-do-wody-dla-niemowlat-force-1-crib-PHNGqM.png",
     name: "Nike Force 1 Crib",
     price: "189,99",
+    newPrice: "99,99",
   },
   {
     category: "kids",
@@ -222,6 +249,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ba3c21d8-df04-471d-9fbe-c9dd58d8b3e9/rozpinana-bluza-z-kapturem-dla-duzych-sportswear-tech-fleece-NJqW7R.png",
     name: "Nike Tech Fleece",
     price: "429,99",
+    newPrice: "399,99",
   },
   {
     category: "kids",
@@ -230,6 +258,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/edc448da-ed89-4f19-abe1-808de2a9add8/spodenki-z-dzianiny-dresowej-dla-duzych-sportswear-club-fleece-Cb6FPZ.png",
     name: "Nike Sportswear Club Fleece",
     price: "159,99",
+    newPrice: "129,99",
   },
   {
     category: "kids",
@@ -238,6 +267,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/896bf2fb-20db-4912-863e-e16ca39256b1/t-shirt-dla-duzych-chicago-bulls-statement-edition-jordan-nba-vvp5jC.png",
     name: "Chicago Bulls Statement Edition",
     price: "139,99",
+    newPrice: "89,89",
   },
   {
     category: "kids",
@@ -246,6 +276,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/acbce95f-c2a8-4718-9527-b82305ad9668/buty-dla-niemowlat-i-maluchow-jordan-1-mid-se-NwMGcl.png",
     name: "Jordan 1 Mid SE",
     price: "299,99",
+    newPrice: "199,99",
   },
   {
     category: "kids",
@@ -254,6 +285,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/842e02c7-06f8-4f53-b7d7-92cab02150a7/pilkarska-bluza-z-kapturem-i-zamkiem-calej-dlugosci-dla-duzych-liverpool-fc-tech-fleece-4Rx6kN.png",
     name: "Liverpool F.C. Tech Fleece",
     price: "499,99",
+    newPrice: "362,89",
   },
   {
     category: "kids",
@@ -262,6 +294,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/898ee19e-1d28-49a7-a2e1-41f15003e9f5/klapki-dla-duzych-jordan-post-G8nm0L.png",
     name: "Jordan Post",
     price: "129,99",
+    newPrice: "79,99",
   },
   {
     category: "kids",
@@ -270,6 +303,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c423b6a7-4717-4c1e-817c-19cee58c39c9/koszulka-pilkarska-dla-duzych-dri-fit-paris-saint-germain-stadium-2024-25-replika-MKRplq.png",
     name: "Paris Saint-Germain Stadium",
     price: "379,99",
+    newPrice: "279,99",
   },
   {
     category: "kids",
@@ -278,6 +312,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e5659edd-c0e1-4957-8033-77df458af0d7/buty-dla-duzych-air-max-plus-cVqLFh.png",
     name: "Nike Air Max Plus",
     price: "669,99",
+    newPrice: "559,99",
   },
   {
     category: "kids",
@@ -286,6 +321,7 @@ export const shopItems = [
     img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/898ee19e-1d28-49a7-a2e1-41f15003e9f5/klapki-dla-duzych-jordan-post-G8nm0L.png",
     name: "Jordan Post",
     price: "129,99",
+    newPrice: "89,99",
   },
 ];
 

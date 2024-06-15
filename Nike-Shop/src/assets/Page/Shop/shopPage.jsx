@@ -1,4 +1,4 @@
-import ShopFilter from "./ShopContent/ShopFilter/shopFilter.jsx";
+import ShopFilter from "./ShopContent/ShopFilter/shopFilter";
 
 function shopPage() {
   return (

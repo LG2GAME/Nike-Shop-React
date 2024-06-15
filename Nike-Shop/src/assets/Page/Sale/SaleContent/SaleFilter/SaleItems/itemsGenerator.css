@@ -1,11 +1,21 @@
-.items-container {
+.nav-sale {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
+}
+
+.nav-sale a {
+  border-radius: 25px;
+  border: 2px solid var(--black);
+  color: var(--black);
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .items-container {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -29,6 +39,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.price-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+.new-price {
+  color: var(--dark-red) !important;
 }
 
 .ic-txt-price button {
@@ -39,7 +62,8 @@
   background-color: var(--black);
   color: var(--white);
 }
-.ic-txt-price button:hover {
+.ic-txt-price button:hover,
+.nav-sale a:hover {
   transform: scale(1.05);
 }
 
