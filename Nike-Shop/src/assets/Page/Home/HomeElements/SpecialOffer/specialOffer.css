@@ -73,6 +73,7 @@
   border-radius: 999px;
   text-decoration: none;
   padding: 1rem 2rem;
+  transition: all 0.3s ease-in;
 }
 .am98-section.whiteTheme .atc-btns-addToCard a {
   background-color: var(--black);
@@ -81,6 +82,16 @@
 .am98-section.blackTheme .atc-btns-addToCard a {
   background-color: var(--white);
   color: var(--black);
+}
+.am98-section.whiteTheme .atc-btns-addToCard a:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+.am98-section.blackTheme .atc-btns-addToCard a:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--white);
 }
 
 .desc-desc {

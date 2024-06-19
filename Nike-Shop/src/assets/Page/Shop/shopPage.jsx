@@ -3,7 +3,9 @@ import ShopFilter from "./ShopContent/ShopFilter/shopFilter";
 function shopPage() {
   return (
     <>
-      <ShopFilter />
+      <div className="shop-page-container">
+        <ShopFilter />
+      </div>
     </>
   );
 }

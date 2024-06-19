@@ -34,6 +34,12 @@
   height: 10%;
   padding: 0.5rem 2rem;
   text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.gh-c a:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border: 2px solid var(--white);
 }
 
 .gh-c button {
@@ -46,17 +52,15 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  transition: background-color 0.3s ease, filter 0.3s ease, scale 0.3s ease;
+  transition: all 0.3s ease-in;
 }
 .gh-c button:hover {
-  background-color: var(--platinum);
-}
-.gh-c button.off:hover {
-  background-color: var(--gray-platinum) !important;
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--white);
 }
 .gh-c button.off {
-  opacity: 0.5;
-  cursor: auto;
+  visibility: hidden;
 }
 .gh-c button.off:hover {
   background-color: var(--white);

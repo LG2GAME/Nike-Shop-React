@@ -7,11 +7,16 @@
 
 .nav-sale a {
   border-radius: 25px;
-  border: 2px solid var(--black);
+  border: 2px solid var(--black) !important;
   color: var(--black);
   padding: 10px 15px;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease-in;
+  background-color: var(--white) !important;
+}
+.nav-sale a:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
 }
 
 .items-container {
@@ -58,13 +63,15 @@
   border: none;
   padding: 10px 15px;
   border-radius: 25px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease-in;
   background-color: var(--black);
   color: var(--white);
 }
 .ic-txt-price button:hover,
 .nav-sale a:hover {
-  transform: scale(1.05);
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
 }
 
 @media (max-width: 1025px) {

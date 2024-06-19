@@ -42,4 +42,10 @@
   height: 10%;
   padding: 0.5rem 2rem;
   text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.offer-content-btns a:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
 }
