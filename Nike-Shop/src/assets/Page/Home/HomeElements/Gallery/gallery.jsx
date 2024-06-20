@@ -1,5 +1,4 @@
-import { FaAngleLeft } from "react-icons/fa";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import RenderGallery from "./Products/renderProducts.jsx";
 
 const initSlider = () => {

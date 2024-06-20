@@ -17,36 +17,37 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
   cursor: pointer;
+  margin: 10px !important;
 }
 
 .sic-img,
 .sic-txt {
-  width: 50%;
   height: 100%;
+  width: 50%;
 }
 
 .sic-img {
   background-color: var(--dark-white);
-  border-radius: 25px 0 0 25px;
-}
-
-.sic-img img {
-  border-radius: 25px 0 0 25px;
-  height: 100%;
 }
 
 .sic-txt {
-  align-items: center;
   background-color: var(--black);
-  border-radius: 0 25px 25px 0;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   overflow-y: auto;
-  padding: 10px;
+  align-items: center;
+}
+
+.sic-txt::-webkit-scrollbar {
+  width: 4px;
+}
+.sic-txt::-webkit-scrollbar-track {
+  background: var(--black);
+}
+.sic-txt::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 5px;
 }
 
 .sic-txt-general {
@@ -110,12 +111,13 @@
   background-color: var(--white);
   color: var(--black);
 }
-.sic-txt-add button:nth-child(2) {
+.sic-txt-add button:nth-child(1):hover {
   background-color: var(--black);
   color: var(--white);
   border: 2px solid var(--white);
 }
-.sic-txt-add button:nth-child(1):hover {
+
+.sic-txt-add button:nth-child(2) {
   background-color: var(--black);
   color: var(--white);
   border: 2px solid var(--white);
@@ -125,23 +127,8 @@
   color: var(--black);
 }
 
-.sic-txt-rating {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.sic-txt-rating .stars svg {
-  margin: 0 5px;
-}
-
 .sic-txt-description {
-  width: 100%;
-}
-
-.sic-txt-description .accordion {
-  text-align: center;
+  width: 90%;
 }
 
 .sic-txt-description .accordion-item {
@@ -151,15 +138,13 @@
 .sic-txt-description .accordion-button {
   background-color: var(--black) !important;
   color: var(--white) !important;
-  border: 2px solid var(--white);
+  border: 2px solid var(--white) !important;
 }
-
 .sic-txt-description .accordion-button:hover,
 .sic-txt-description .accordion-button:not(.collapsed) {
   background-color: var(--black) !important;
   border: 2px solid var(--white);
 }
-
 .sic-txt-description .accordion-button:not(.collapsed) {
   border-bottom: none;
 }
@@ -173,4 +158,26 @@
   color: var(--white) !important;
   border: 2px solid var(--white) !important;
   transition: background-color 0.3s, color 0.3s;
+  padding: 10px 40px;
+}
+
+.sic-txt-description .accordion-body a {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.sic-txt-rating {
+  display: flex;
+  align-items: center;
+}
+.sic-txt-rating p {
+  margin: 0 20px;
+}
+
+.sic-txt-rating .stars {
+  display: flex;
+  align-items: center;
+}
+.sic-txt-rating .stars svg {
+  margin: 0 5px;
 }

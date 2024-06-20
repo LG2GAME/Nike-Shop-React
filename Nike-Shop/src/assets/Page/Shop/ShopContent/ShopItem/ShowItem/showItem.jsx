@@ -2,15 +2,16 @@
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import Accordion from "react-bootstrap/Accordion";
+import { renderStars, getRatingText } from "./RenderStars/renderStars";
+import siGallery from "./SiGallery/siGallery";
 
 const ShowItem = (props) => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => {
     setVisible(!visible);
-    document.body.style.overflow = visible ? "scroll" : "hidden";
+    // document.body.style.overflow = visible ? "scroll" : "hidden";
   };
 
   useEffect(() => {
@@ -27,26 +28,6 @@ const ShowItem = (props) => {
     };
   }, [visible]);
 
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const halfStars = rating % 1 >= 0.5 ? 1 : 0;
-    const emptyStars = 5 - fullStars - halfStars;
-
-    return (
-      <div className="stars">
-        {[...Array(fullStars)].map((_, index) => (
-          <FaStar key={index} />
-        ))}
-        {[...Array(halfStars)].map((_, index) => (
-          <FaStarHalfAlt key={index + fullStars} />
-        ))}
-        {[...Array(emptyStars)].map((_, index) => (
-          <FaRegStar key={index + fullStars + halfStars} />
-        ))}
-      </div>
-    );
-  };
-
   return (
     <div>
       <button className="h4" onClick={toggleVisibility}>
@@ -57,11 +38,9 @@ const ShowItem = (props) => {
           <a className="h2 sic-close" onClick={toggleVisibility}>
             <IoClose />
           </a>
-          <div className="sic-img">
-            <img src={props.img} alt={props.name} />
-          </div>
+          <div className="sic-img">{siGallery(props.images)}</div>
           <div className="sic-txt">
-            <div className="mt-2 mb-2 sic-txt-general">
+            <div className="mt-4 sic-txt-general">
               <div className="sic-g-name">
                 <p className="h1">{props.name}</p>
                 <div className="sic-txt-price">
@@ -97,15 +76,54 @@ const ShowItem = (props) => {
                   Ulubione <CiHeart />
                 </button>
               </div>
-              <div className="mt-5 sic-txt-rating">
-                {renderStars(props.rating)}
-              </div>
             </div>
-            <div className="mt-5 sic-txt-description">
+            <div className="mt-5 mb-4 sic-txt-description">
               <Accordion>
                 <Accordion.Item eventKey={props.id + "-desc"}>
                   <Accordion.Header>Opis</Accordion.Header>
                   <Accordion.Body>{props.description}</Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={props.id + "-brand"}>
+                  <Accordion.Header>Marka</Accordion.Header>
+                  <Accordion.Body>
+                    <li>{props.brand}</li>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={props.id + "-delivery"}>
+                  <Accordion.Header>
+                    Bezpłatna dostawa i zwroty
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <p>
+                      Bezpłatna standardowa dostawa dzięki członkostwu Nike.
+                    </p>
+                    <li>
+                      Zamówione produkty można zwrócić bezpłatnie w ciągu 30
+                      dni.
+                      <a
+                        href="https://www.nike.com/pl/help/a/wyjatki-dotyczace-zwrotow-ue"
+                        target="_blank"
+                      >
+                        <br />
+                        Obowiązują pewne wyjątki.
+                      </a>
+                    </li>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={props.id + "-rating"}>
+                  <Accordion.Header>Oceny ({props.reviews})</Accordion.Header>
+                  <Accordion.Body>
+                    {props.reviews === "" || props.reviews === "0" ? (
+                      <div className="sic-txt-rating">
+                        <p>Produkt nie został jeszcze oceniony.</p>
+                      </div>
+                    ) : (
+                      <div className="sic-txt-rating">
+                        {renderStars(props.rating)}
+                        <p>{getRatingText(props.rating)}</p>
+                      </div>
+                    )}
+                  </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </div>

@@ -6,6 +6,7 @@ import "../Page/Sale/SaleContent/SaleFilter/saleFilter.css";
 import "../Page/Sale/SaleContent/SaleFilter/SaleItems/itemsGenerator.css";
 import "../Page/Shop/ShopContent/ShopItem/shopItemBuild.css";
 import "../Page/Shop/ShopContent/ShopItem/ShowItem/showItem.css";
+import "../Page/Shop/ShopContent/ShopItem/ShowItem/SiGallery/siGallery.css";
 import "../Page/Shop/shopPage.css";
 import "./basicSet.css";
 import "./Footer/footer.css";

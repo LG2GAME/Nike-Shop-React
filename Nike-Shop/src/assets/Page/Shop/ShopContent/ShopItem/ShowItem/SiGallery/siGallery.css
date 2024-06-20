@@ -1,0 +1,38 @@
+.si-gallery {
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+}
+
+.si-g-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  transform: translateY(-50%);
+}
+.si-g-btns {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.si-g-button {
+  align-items: center;
+  background-color: var(--white) !important;
+  border-radius: 999px !important;
+  border: 2px solid var(--black) !important;
+  color: var(--black) !important;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 10px !important;
+  padding: 0 !important;
+  transition: all 0.6s ease-in;
+  width: 50px;
+}
+
+.si-g-button:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+}

@@ -13,23 +13,30 @@
 }
 
 .accordion-item {
-  border: 0;
-  border-bottom: 1px solid var(--soft-gray);
+  margin: 4px 0;
   border-radius: 0 !important;
 }
 
 .accordion-button {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border: 2px solid var(--black) !important;
   border-radius: 0 !important;
 }
-.accordion-button.collapsed {
+
+.accordion-button.collapsed,
+.accordion-button:focus {
   box-shadow: none !important;
 }
+
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
-  background-color: var(--gray-platinum) !important;
+  border-radius: 0 !important;
 }
-.accordion-button:focus {
-  box-shadow: none;
+
+.accordion-body {
+  border: 2px solid var(--black) !important;
+  border-top: none !important;
 }
 
 @media (max-width: 998px) {

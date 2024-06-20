@@ -4,13 +4,11 @@ import Papa from "papaparse";
 import ShowItem from "./ShowItem/showItem";
 import axios from "axios";
 
-const imgR = (images) => {
-  const cleanedImages = images
+const getImage = (images) => {
+  return images
     .replace(/["[\]]/g, "")
     .split(",")
-    .map((item) => item.trim());
-
-  return cleanedImages[0];
+    .map((item) => item.trim())[0];
 };
 
 const ItemBuild = (props) => {
@@ -18,7 +16,7 @@ const ItemBuild = (props) => {
     if (props.images !== "") {
       return (
         <div className="s-item-container">
-          <img src={imgR(props.images)} alt={props.name} />
+          <img src={getImage(props.images)} alt={props.name} />
           <div className="sc-txt">
             <div className="sc-txt-name">
               <p className="h3">{props.name}</p>
@@ -38,6 +36,7 @@ const ItemBuild = (props) => {
                 brand={props.brand}
                 description={props.description}
                 rating={props.rating}
+                reviews={props.reviews}
               />
             </div>
           </div>
@@ -78,6 +77,7 @@ function ShopItemBuild() {
       brand={item.Brand}
       description={item.Description}
       rating={item.Rating}
+      reviews={item.Reviews}
     />
   ));
 }
