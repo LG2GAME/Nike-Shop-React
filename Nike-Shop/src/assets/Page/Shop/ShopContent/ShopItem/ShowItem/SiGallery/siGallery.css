@@ -31,8 +31,92 @@
   transition: all 0.6s ease-in;
   width: 50px;
 }
-
 .si-g-button:hover {
   background-color: var(--black) !important;
   color: var(--white) !important;
+}
+
+.si-g-body {
+  width: 100%;
+  height: 100%;
+}
+
+.si-g-b-thumbnail {
+  position: absolute;
+  display: grid;
+  gap: 1rem;
+  overflow-y: scroll;
+  width: 10%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  background-color: var(--datk-white);
+}
+
+.si-g-b-thumbnail:hover {
+  opacity: 1;
+}
+
+.si-g-b-thumbnail::-webkit-scrollbar {
+  width: 4px;
+}
+.si-g-b-thumbnail::-webkit-scrollbar-track {
+  background: var(--white);
+}
+.si-g-b-thumbnail::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 5px;
+}
+
+.si-g-b-thumbnail img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+}
+.si-g-b-thumbnail img:hover {
+  border: 2px solid var(--black);
+}
+
+.si-g-b-gallery {
+  width: 100%;
+  height: 100%;
+}
+
+.si-g-b-container {
+  width: 100%;
+  height: 100%;
+}
+
+.si-g-b-carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.si-g-b-items {
+  display: grid;
+  gap: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+.si-g-b-items .si-g-b-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.si-g-b-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }

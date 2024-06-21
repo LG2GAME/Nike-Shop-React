@@ -72,6 +72,4 @@ function Gallery() {
   );
 }
 
-// Navbar()
-
 export default Gallery;

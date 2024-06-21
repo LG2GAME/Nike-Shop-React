@@ -4,14 +4,13 @@ import { IoClose } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import Accordion from "react-bootstrap/Accordion";
 import { renderStars, getRatingText } from "./RenderStars/renderStars";
-import siGallery from "./SiGallery/siGallery";
+import SiGallery from "./SiGallery/siGallery";
 
 const ShowItem = (props) => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisibility = () => {
     setVisible(!visible);
-    // document.body.style.overflow = visible ? "scroll" : "hidden";
   };
 
   useEffect(() => {
@@ -38,7 +37,9 @@ const ShowItem = (props) => {
           <a className="h2 sic-close" onClick={toggleVisibility}>
             <IoClose />
           </a>
-          <div className="sic-img">{siGallery(props.images)}</div>
+          <div className="sic-img">
+            <SiGallery images={props.images} />
+          </div>
           <div className="sic-txt">
             <div className="mt-4 sic-txt-general">
               <div className="sic-g-name">
