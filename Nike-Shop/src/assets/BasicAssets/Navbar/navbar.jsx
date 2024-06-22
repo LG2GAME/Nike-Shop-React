@@ -5,15 +5,21 @@ function Navbar() {
     const ulNavbar = document.getElementById("navUl");
     const navbar = document.getElementById("navbar");
 
-    ["hidden", "show"].map((e) => {
+    ["hidden", "show"].forEach((e) => {
       ulNavbar.classList.toggle(e);
       navbar.classList.toggle(e);
     });
+
+    if (navbar.classList.contains("show")) {
+      document.body.style.overflow = "hidden"; // Blokowanie scrollowania
+    } else {
+      document.body.style.overflow = ""; // Odblokowanie scrollowania
+    }
   }
 
   return (
     <>
-      <nav className={["navbar bg-color-black hidden"]} id="navbar">
+      <nav className="navbar bg-color-black hidden" id="navbar">
         <div className="navbar-top">
           <div>
             <img src={logo} alt="nike logo" />

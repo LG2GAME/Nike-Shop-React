@@ -19,6 +19,16 @@
   right: 0;
   cursor: pointer;
   margin: 10px !important;
+  z-index: 1000;
+}
+
+.sic-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .sic-img,
@@ -180,4 +190,50 @@
 }
 .sic-txt-rating .stars svg {
   margin: 0 5px;
+}
+
+@media (max-width: 998px) {
+  .show-item-container {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .sic-close svg {
+    color: var(--black);
+  }
+
+  .sic-items {
+    display: block;
+    overflow: scroll;
+    min-height: 100%;
+  }
+
+  .sic-img,
+  .sic-txt {
+    min-height: 100%;
+    width: 100%;
+    flex: 1;
+  }
+
+  .sic-txt {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .sic-txt-s-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+  }
+  .sic-txt-s-container ul li {
+    width: 90%;
+  }
+
+  .sic-txt-add button {
+    width: 75%;
+    padding: 10px 0;
+  }
 }

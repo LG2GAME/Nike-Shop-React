@@ -36,15 +36,28 @@ const initSlider = () => {
     ); // Adjust debounce delay as needed
 
     const handleSlideButton = () => {
-      slideButtons[0].classList.toggle("off", imageList.scrollLeft <= 0);
-      slideButtons[1].classList.toggle(
-        "off",
-        imageList.scrollLeft >= maxScrollLeft
-      );
+      slideButtons[0].classList =
+        imageList.scrollLeft <= 0
+          ? "h3 slide-button si-g-button off"
+          : "h3 slide-button si-g-button";
+      slideButtons[1].classList =
+        imageList.scrollLeft >= maxScrollLeft - 1
+          ? "h3 slide-button si-g-button off"
+          : "h3 slide-button si-g-button";
     };
 
     imageList.addEventListener("scroll", handleSlideButton);
     handleSlideButton(); // Initial check
+  });
+
+  const thumbnails = document.querySelectorAll(
+    ".si-g-b-thumbnail .si-g-b-item"
+  );
+  thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener("click", () => {
+      const targetScrollLeft = imageList.clientWidth * index;
+      imageList.scrollTo({ left: targetScrollLeft, behavior: "smooth" });
+    });
   });
 };
 
@@ -89,7 +102,9 @@ const SiGallery = ({ images }) => {
         <section className="si-g-body">
           <section
             className="si-g-b-thumbnail"
-            style={{ gridTemplateRows: `repeat(${imagesArray.length}, 1fr)` }}
+            style={{
+              gridTemplateRows: `repeat(${imagesArray.length}, 1fr)`,
+            }}
           >
             {siRenderGallery(imagesArray)}
           </section>

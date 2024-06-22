@@ -97,19 +97,10 @@
   .s-item-container img {
     height: 70%;
   }
-
-  .sc-txt-price button {
-    width: 50%;
-  }
 }
 
 @media (max-width: 425px) {
   .sc-txt-price {
     flex-direction: column;
-  }
-
-  .sc-txt-price button {
-    width: 100%;
-    padding: 10px 90px;
   }
 }

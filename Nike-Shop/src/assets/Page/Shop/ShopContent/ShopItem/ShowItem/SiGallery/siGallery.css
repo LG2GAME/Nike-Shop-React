@@ -2,14 +2,16 @@
   color: var(--white);
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .si-g-header {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 50%;
   transform: translateY(-50%);
+  z-index: 999;
 }
 .si-g-btns {
   display: flex;
@@ -30,6 +32,10 @@
   padding: 0 !important;
   transition: all 0.6s ease-in;
   width: 50px;
+  visibility: visible;
+}
+.si-g-button.off {
+  visibility: hidden;
 }
 .si-g-button:hover {
   background-color: var(--black) !important;
@@ -54,7 +60,6 @@
   transition: all 0.3s ease-in;
   background-color: var(--datk-white);
 }
-
 .si-g-b-thumbnail:hover {
   opacity: 1;
 }
@@ -99,7 +104,6 @@
 
 .si-g-b-items {
   display: grid;
-  gap: 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
@@ -119,4 +123,21 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 998px) {
+  .si-g-body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .si-g-b-gallery {
+    width: 100%;
+    height: 100%;
+  }
+
+  .si-g-b-container {
+    width: 100%;
+    height: 100%;
+  }
 }
