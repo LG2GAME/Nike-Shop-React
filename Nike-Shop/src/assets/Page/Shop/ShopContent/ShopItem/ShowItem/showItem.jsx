@@ -8,7 +8,8 @@ import SiGallery from "./SiGallery/siGallery";
 
 const ShowItem = (props) => {
   const [visible, setVisible] = useState(false);
-  const containerRef = useRef(null);
+  const sicItemsContainer = useRef(null);
+  const sicImgContainer = useRef(null);
 
   const toggleVisibility = () => {
     setVisible(!visible);
@@ -17,15 +18,11 @@ const ShowItem = (props) => {
 
   const logScrollHeight = () => {
     if (
-      containerRef.current.scrollTop >=
-      document.querySelector(".sic-items").scrollHeight -
-        containerRef.current.scrollTop -
-        60
-    ) {
+      sicItemsContainer.current.scrollTop >=
+      sicImgContainer.current.scrollHeight
+    )
       document.querySelector(".sic-close svg").style.color = "white";
-    } else {
-      document.querySelector(".sic-close svg").style.color = "black";
-    }
+    else document.querySelector(".sic-close svg").style.color = "black";
   };
 
   useEffect(() => {
@@ -36,7 +33,7 @@ const ShowItem = (props) => {
     };
 
     document.addEventListener("keydown", handleKeyDown);
-    const container = containerRef.current;
+    const container = sicItemsContainer.current;
     if (container) {
       container.addEventListener("scroll", logScrollHeight);
     }
@@ -59,8 +56,8 @@ const ShowItem = (props) => {
           <a className="h2 sic-close" id="sic-close" onClick={toggleVisibility}>
             <IoClose />
           </a>
-          <section className="sic-items" ref={containerRef}>
-            <div className="sic-img">
+          <section className="sic-items" ref={sicItemsContainer}>
+            <div className="sic-img" ref={sicImgContainer}>
               <SiGallery images={props.images} />
             </div>
             <div className="sic-txt">

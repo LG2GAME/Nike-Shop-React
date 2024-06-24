@@ -217,7 +217,8 @@
   }
 
   .sic-txt {
-    overflow-y: scroll;
+    height: fit-content;
+    overflow-y: hidden;
   }
 }
 

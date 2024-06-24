@@ -46,6 +46,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     height: 10vh;
+    position: static;
   }
   .navbar.show {
     height: 100vh;
